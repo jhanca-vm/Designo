@@ -1,6 +1,5 @@
 {
   "singleQuote": true,
   "printWidth": 90,
-  "vueIndentScriptAndStyle": true,
-  "proseWrap": "always"
+  "vueIndentScriptAndStyle": true
 }

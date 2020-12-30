@@ -1,9 +1,7 @@
 <template>
-  <div id="l-default">
+  <div id="l-default" class="pt-24 md:pt-0">
     <Header />
-    <main class="text-grey-200 leading-normal">
-      <Nuxt />
-    </main>
+    <Nuxt />
   </div>
 </template>
 
@@ -20,6 +18,11 @@
 
 <style>
   #l-default {
-    min-width: 360px;
+    min-width: 22.5rem;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: 69.4375rem;
   }
 </style>

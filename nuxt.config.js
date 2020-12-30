@@ -12,13 +12,12 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap',
       },
     ],
   },
 
-  css: ['./assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css'],
 
   plugins: [],
 

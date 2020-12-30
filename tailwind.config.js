@@ -14,7 +14,8 @@ module.exports = {
     lineHeight: {
       none: '1',
       normal: '1.625rem',
-      relaxed: '3rem',
+      relaxed: '2.25rem',
+      loose: '3rem',
     },
     extend: {
       colors: {
@@ -30,6 +31,9 @@ module.exports = {
       },
       letterSpacing: {
         max: '0.25em',
+      },
+      fontSize: {
+        '4xl': '2rem',
       },
     },
   },

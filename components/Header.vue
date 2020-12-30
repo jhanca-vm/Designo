@@ -1,26 +1,28 @@
 <template>
   <header
-    class="h-24 flex items-center justify-between px-6 mx-auto relative sm:px-10 md:h-36 lg:px-14 xl:px-0"
+    class="h-24 w-full bg-white flex items-center justify-between px-6 mx-auto fixed top-0 sm:px-10 md:h-36 md:static lg:px-14 xl:px-0"
   >
-    <figure>
+    <figure @click="hideMenu">
       <n-link to="/">
         <img class="w-48" src="~/assets/shared/mobile/logo-dark.png" alt="Designo logo" />
       </n-link>
     </figure>
     <div
       :class="menu.class"
-      class="menu absolute inset-0 bottom-0 bg-black bg-opacity-50 mt-24 md:static md:block md:bg-transparent md:mt-0"
+      class="menu fixed inset-0 bottom-0 bg-black bg-opacity-50 mt-24 md:static md:block md:bg-transparent md:mt-0"
     >
       <ul
         class="bg-grey-300 px-6 py-12 text-white text-2xl uppercase sm:px-10 md:bg-transparent md:text-grey-200 md:flex md:text-sm md:p-0 md:justify-between"
       >
-        <li class="mb-6 md:mb-0 hover:underline">
+        <li @click="hideMenu" class="mb-6 md:mb-0 hover:underline">
           <n-link to="/about">Our company</n-link>
         </li>
-        <li class="mb-6 md:mb-0 hover:underline">
+        <li @click="hideMenu" class="mb-6 md:mb-0 hover:underline">
           <n-link to="/locations">Locations</n-link>
         </li>
-        <li class="hover:underline"><n-link to="/contact">Contact</n-link></li>
+        <li @click="hideMenu" class="hover:underline">
+          <n-link to="/contact">Contact</n-link>
+        </li>
       </ul>
     </div>
     <span
@@ -38,11 +40,17 @@
     data() {
       return {
         hidden: true,
+        name: '',
       };
     },
     methods: {
       showHideMenu() {
         this.hidden = !this.hidden;
+      },
+      hideMenu() {
+        if (!this.hidden) {
+          this.hidden = true;
+        }
       },
     },
     computed: {
@@ -65,12 +73,16 @@
 
 <style>
   header {
-    max-width: 1111px;
+    max-width: 69.4375rem;
   }
 
   .menu {
     height: calc(100vh - 6rem);
-    letter-spacing: 2px;
+    letter-spacing: 0.0625rem;
+  }
+
+  .menu ul li {
+    width: fit-content;
   }
 
   @media (min-width: 768px) {
@@ -79,7 +91,7 @@
     }
 
     .menu ul {
-      width: 370px;
+      width: 23.125rem;
     }
   }
 </style>

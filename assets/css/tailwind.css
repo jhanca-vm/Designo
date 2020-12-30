@@ -3,3 +3,8 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+
+.text-hero {
+  font-size: 15px;
+  line-height: 25px;
+}
