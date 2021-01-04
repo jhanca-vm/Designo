@@ -1,5 +1,7 @@
 <template>
-  <main class="text-grey-200 leading-normal sm:px-10 lg:px-14 xl:px-0">
+  <main
+    class="text-grey-200 leading-normal mb-72 pb-4 sm:px-10 sm:mb-80 lg:px-14 lg:mb-96 xl:px-0"
+  >
     <Hero />
     <section class="categories px-6 grid gap-y-6 sm:px-0 lg:grid-cols-2 gap-x-6">
       <Category
@@ -10,6 +12,7 @@
         :key="slug"
       />
     </section>
+    <Features />
   </main>
 </template>
 
@@ -17,11 +20,13 @@
   import Vue from 'vue';
   import Hero from '@/components/Hero.vue';
   import Category from '@/components/Category.vue';
+  import Features from '@/components/Features.vue';
 
   export default Vue.extend({
     components: {
       Hero,
       Category,
+      Features,
     },
     data() {
       return {

@@ -35,6 +35,10 @@ module.exports = {
       fontSize: {
         '4xl': '2rem',
       },
+      backgroundImage: theme => ({
+        gradient:
+          'linear-gradient(90deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%)',
+      }),
     },
   },
   variants: {

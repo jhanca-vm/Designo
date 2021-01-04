@@ -1,6 +1,6 @@
 <template>
   <header
-    class="h-24 w-full bg-white flex items-center justify-between px-6 mx-auto fixed top-0 sm:px-10 md:h-36 md:static lg:px-14 xl:px-0"
+    class="h-24 w-full bg-white flex items-center justify-between px-6 mx-auto fixed z-50 top-0 sm:px-10 md:h-36 md:static md:bg-transparent lg:px-14 xl:px-0"
   >
     <figure @click="hideMenu">
       <n-link to="/">
