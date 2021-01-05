@@ -1,10 +1,10 @@
 <template>
   <footer
-    class="bg-grey-300 text-white px-6 relative pt-56 pb-14 sm:px-10 sm:pt-32 sm:pb-16 lg:px-14 lg:pt-24 xl:px-0"
+    class="bg-grey-300 text-white relative pt-56 pb-14 sm:pt-32 sm:pb-16 lg:pt-24 xl:px-0"
   >
     <CallToAction />
     <section
-      class="footer-content mx-auto text-center sm:grid sm:grid-cols-3 sm:gap-x-4 sm:gap-y-9 sm:text-left lg:mt-1"
+      class="footer-content mx-auto text-center px-6 sm:grid sm:grid-cols-3 sm:px-10 sm:gap-x-4 sm:gap-y-9 sm:text-left lg:mt-1 lg:px-14 xl:px-0"
     >
       <div
         class="sm:flex sm:justify-between sm:items-center sm:border-b border-white border-opacity-10 sm:py-10 sm:col-span-3"

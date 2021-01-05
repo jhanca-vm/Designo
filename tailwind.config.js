@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       colors: {
         peach: {
+          50: '#FDF3F0',
           100: '#FFAD9B',
           200: '#E7816B',
         },

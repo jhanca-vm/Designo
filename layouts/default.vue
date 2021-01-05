@@ -32,7 +32,7 @@
   @media (min-width: 1280px) {
     #l-default {
       background-image: url('~assets/home/desktop/bg-pattern-leaf.svg');
-      background-position-y: 29rem;
+      background-position: 0 29rem;
     }
   }
 </style>
