@@ -1,6 +1,6 @@
 <template>
   <section
-    class="locations my-28 grid gap-y-12 sm:gap-y-14 lg:grid-cols-3 lg:gap-x-7 lg:py-2 xl:py-0 xl:my-40"
+    class="locations text-grey-200 my-28 grid gap-y-12 sm:gap-y-14 lg:grid-cols-3 lg:gap-x-7 lg:py-2 xl:py-0 xl:my-40"
   >
     <div
       class="text-center font-medium uppercase"
